@@ -5,47 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maris Haugrud</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/f58380da5a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="about-me"> 
         <nav>
-          <div class="personal__logo">Maris Haugrud
-            <ul class="nav__link--list">
-                <li>
-                    <a href="" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Languages</a>
-                </li>
-                <li>
-                    <a href="" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li>
-                    <a href="" class="
-                    nav__link--anchor
-                    nav__link--anchor-primary
-                    ">Contact</a>
-                </li>
-            </ul>
-          </div>
+          <div class="personal__logo">Maris Haugrud</div>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+                <a href="#languages" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Languages</a>
+            </li>
+            <li class="nav__link">
+                <a href="#projects" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Projects</a>
+            </li>
+            <li class="nav__link">
+                <a href="mailto:maris.haugrud@gmail.com" class="
+                nav__link--anchor
+                nav__link--anchor-primary
+                ">Contact</a>
+            </li>
+          </ul>
         </nav>
-        <div>
-            <div class="about-me__info row">
+        <div class="flex flex-1">
+            <div class="about-me__info
+             row">
                 <div class="about-me__info--container">
                     <figure class="about-me__picture--mask">
-                        <img src="./assets/selfie.JPG" alt="Picture of Maris Haugrud" class="about-me__info--image">
+                        <img src="./assets/selfie.JPG" class="about-me__picture" alt="Picture of Maris Haugrud">
                     </figure>
+                    <span class="language__name"></span>
                     <h1 class="about-me__info--title">
-                        Hi, I'm Maris Haugrud   
+                        Hi, I'm <span class="text--purple">Maris Haugrud</span>&nbsp;<span class="wave">👋</span>   
                     </h1>
+                    <p class="about-me__info--para">I am a <strong class="text--purple">frontend web developer</strong> who takes pride in balancing creative designs with a simple, intuitive interface.</p>
+                    <div class="about-me__links">
+                        <a href="" class="about-me__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="" class="about-me__link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="" class="about-me__link">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="./assets/Example Resume.pdf" target="_blank" class="about-me__link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+                <figure class="about-me__img--container">
+                    <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
+                </figure>
+                <span class="language__name"></span>
+            </div>
+        </div>
+    </section>
+    <section id="languages">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
+                <div class="language__list">
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/css.png" alt="CSS" class="language__img">
+                        </figure>
+                        <span class="language__name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="./assets/html5.svg" alt="HTML5" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car sales project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum I am only writing in placeholder text because, honestly, I could use some creative writing practice. Writing whatever comes to mind. What did you eat today? Being lonely encourages a lot of introspection but I think I've had too much. Need to get into the physical world and learn my lessons that way. Too much is too much. Dogmatism, catch phrases, what does it even mean if not put into practice.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="www.github.com/yourlink" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="www.yourwebsite.com" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car sales project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum I am only writing in placeholder text because, honestly, I could use some creative writing practice. Writing whatever comes to mind. What did you eat today? Being lonely encourages a lot of introspection but I think I've had too much. Need to get into the physical world and learn my lessons that way. Too much is too much. Dogmatism, catch phrases, what does it even mean if not put into practice.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="www.github.com/yourlink" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="www.yourwebsite.com" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car sales project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum I am only writing in placeholder text because, honestly, I could use some creative writing practice. Writing whatever comes to mind. What did you eat today? Being lonely encourages a lot of introspection but I think I've had too much. Need to get into the physical world and learn my lessons that way. Too much is too much. Dogmatism, catch phrases, what does it even mean if not put into practice.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/mariskh99" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.yourwebsite.com" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="./assets/logo.svg" class="footer__logo--image"alt="Logo">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">GitHub</a>
+                <a href="" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">LinkedIn</a>
+                <a href="mailto:maris.haugrud@gmail.com" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">Email</a>
+                <a href=".assets/Example Resume.pdf" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2026 Maris Haugrud</div>
+        </div>
+    </footer>
 </body>
+
 </html>
