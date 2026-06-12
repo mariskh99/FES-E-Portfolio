@@ -1,0 +1,85 @@
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    color: #243e63;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #7342d6;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 32px;
+    border: none;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+
+NAVIGATION 
+
+*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding-top: 16px;
+}
+
+.nav__logo--wrapper {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+
+.nav__logo--img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav__logo--title {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 8px;
+}
+
+.nav__link {
+    padding: 24px;
+    font-size: 14px;
+}
+
+.login {
+    margin-left: 48px;
+}
+
+
+/*
+
+HEADER
+
+*/
+
+
