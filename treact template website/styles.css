@@ -9,6 +9,7 @@ a {
 }
 
 p {
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -23,11 +24,33 @@ p {
 }
 
 .row__narrow {
-
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .div {
     display: block;
+}
+
+.section__tag {
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    color: #6415ff;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    margin: 16px 0;
+}
+
+.section__para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
 }
 
 .purple {
@@ -39,9 +62,10 @@ p {
     color: white;
     font-size: 16px;
     font-weight: 600;
-    padding: 12px 40px;
-    border-radius: 32px;
+    padding: 12px 32px;
+    border-radius: 500px;
     border: none;
+    cursor: pointer;
 }
 
 button:active {
@@ -114,8 +138,15 @@ HEADER
     width: 40%;
 }
 
+.header__description--title {
+    font-size: 48px;
+    color: #1a202c;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
 .header__description--para {
-    margin: 32px 0;
+    margin-bottom: 32px;
 }
 
 .header__email {
@@ -160,26 +191,233 @@ FEATURES
 
 */
 
-.section__tag {
-    text-align: center;
-}
 
-.section__title {
+.features__description {
     text-align: center;
-}
-
-.section__para {
-    color: #7c8ba1;
     margin: 0 auto;
+}
+
+
+.features__description--title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.features__description--para {
+    font-size: 18px;
+    color: #7c8ba1;
     max-width: 50%;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .features {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-right: 40px;
 }
 
 .feature {
+    display: flex;
     width: calc(100% / 3);
+}
+
+.feature__row {
+    display: flex;
+}
+
+.feature__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__icon--wrapper {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    padding: 20px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 500px;
+}
+
+.feature__text {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.feature__para {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+
+/*
+
+QUALITY
+
+*/
+
+
+#quality .container {
+    padding: 96px 0;
+}
+
+#quality .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality__tag {
+    margin: 16px;
+}
+
+.quality__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 576px;
+    margin-right: 64px;
+}
+
+.quality__description--title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.25;
+    margin: 16px;
+}
+
+.quality__description--para {
+    padding-bottom: 16px;
+    margin: 16px;
+}
+
+.quality__description, .quality__image--wrapper {
+    width: 50%;
+}
+
+.quality__btn {
+    margin-top: 32px;
+    max-width: 160px;
+}
+
+.quality__image--wrapper {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+    margin: 0 56px;
+    z-index: 2;
+    display: flex;
+}
+
+.quality__image {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
+}
+
+
+/*
+
+STEPS
+
+*/
+
+#steps .row {
+    display: flex;
+}
+
+.steps__img--container {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+.steps__img {
+    display: flex;
+    width: 100%;
+}
+
+.steps__grid {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
+  z-index: -10;
+  color: rgb(100, 21, 255); /* currentColor will inherit this */
+  fill: currentColor;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    display: flex;
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+
+/*
+
+VALUES
+
+*/
+
+
+#values .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.values__description {
+    width: 50%;
+}
+
+.values__img {
+    width: 50%;
 }
